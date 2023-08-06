@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5e42f3072.js" crossorigin="anonymous"></script>
+<style>
+     #navbarNav{
+                      background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+                  }
+
+    .navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+#t{
+  color: #000;
+}
+
+
+.dropdown-content {
+    padding: 1px 46px 0px 0px ;
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+    list-style:none;
+    }
+.dropdown:hover .dropdown-content {
+  display: block;
+  color:black;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<nav class="navbar">
+  <ul class="nav-items" style="margin-left:700px;">
+    <li class="dropdown">
+      <a href="#">Superadmin</a>
+      <ul class="dropdown-content">
+        <li><a href="http://127.0.0.1:8000/car/regs" id="t">Signin</a></li>
+        <li><a href="http://127.0.0.1:8000/car/logs" id="t">Login</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" style="margin-left:30px;">
+      <a href="#">Admin</a>
+      <ul class="dropdown-content">
+        <li><a href="http://127.0.0.1:8000/car/rega" id="t">Signin</a></li>
+        <li><a href="http://127.0.0.1:8000/car/loga" id="t">Login</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" style="margin-left:30px;">
+      <a href="#">User</a>
+      <ul class="dropdown-content">
+        <li><a href="http://127.0.0.1:8000/car/usr" id="t">Signin</a></li>
+        <li><a href="http://127.0.0.1:8000/car/usl" id="t">Login</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height:700px;" src="{% static 'car9.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height:700px;" src="{% static 'carss.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height:700px;" src="{% static 'car5.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="container-fluid" style="color: rgb(255, 255, 255); background-color: black; padding-top: 30px; padding-bottom: 30px;">
+        <div class="row">
+          <div class="col" style="margin-left: 10px;">
+
+          <h3>Follow Us</h3><br>
+
+        <form class="d-flex" style="margin-right: 15%; margin-top: -20px;">
+
+          <i class="fa-brands fa-youtube" style="color: #ffffff; padding:10px;"></i>
+          <i class="fa-brands fa-instagram" style="color: #ffffff; padding:10px;"></i>
+          <i class="fa-brands fa-facebook" style="color: #ffffff; padding:10px;"></i>
+          <!-- <button class="btn btn-outline-warning" type="submit">Download</button> -->
+        </form>
+      </div>
+      <div class="col">
+        <h5><b>Our Services</b></h5>
+        <p>Insurance</p>
+        <p>Service</p>
+        <p>Warranty Upgrade</p>
+      </div>
+      <div class="col">
+        <h5><b>Support</b></h5>
+        <p>FAQ</p>
+        <p>Download Your Invoice</p>
+        </div>
+      <div class="col">
+        <h5><b>About</b></h5>
+        <p>About Us</p>
+        <p>Stories</p>
+        <p>Careers</p>
+      </div>
+
+      <div class="row">
+        <center><p style="margin: 30px;">Copyright © 2023, COD. All Rights Reserved.</p></center>
+
+      </div>
+      </div>
+</div>
+
+</body>
+</html>

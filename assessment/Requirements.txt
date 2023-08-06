@@ -1,0 +1,8 @@
+used-python 3.11.1
+ide-pycharm
+user-ayasuser@gmail.com
+pass-1234
+admin-ayasadmin@gmail.com
+pass-1234
+superadmin-ayassuperadmin@gmail.com
+pass-1234

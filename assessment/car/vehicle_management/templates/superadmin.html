@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5e42f3072.js" crossorigin="anonymous"></script>
+<style>
+#a{
+    background-image:url({% static 'carsbac.jpg' %});
+     background-size:cover;
+     background-position:center;
+     }
+     #navbarNav{
+                      background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+                  }
+
+    .navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+#t{
+  color: white;
+}
+
+
+.dropdown-content {
+    padding: 1px 46px 0px 0px ;
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+    list-style:none;
+    }
+.dropdown:hover .dropdown-content {
+  display: block;
+  color:white;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <title>Super admin</title>
+</head>
+<body id="a">
+
+<nav class="navbar">
+  <ul class="nav-items" style="margin-left:740px;">
+<!--    <li class="dropdown">-->
+<!--      <a href="#">Superadmin</a>-->
+<!--      <ul class="dropdown-content">-->
+<!--        <li><a href="http://127.0.0.1:8000/car/regs" id="t">Signin</a></li>-->
+<!--        <li><a href="http://127.0.0.1:8000/car/logs" id="t">Login</a></li>-->
+<!--      </ul>-->
+<!--    </li>-->
+    <li class="dropdown" style="margin-left:30px;">
+      <a href="#">Admin</a>
+      <ul class="dropdown-content">
+        <li><a href="#" id="t">Signin</a></li>
+        <li><a href="#" id="t">Login</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" style="margin-left:30px;">
+      <a href="#">User</a>
+      <ul class="dropdown-content">
+        <li><a href="#" id="t">Signin</a></li>
+        <li><a href="#" id="t">Login</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div style="margin-left:815px;margin-top:130px;">
+
+<a class="btn btn-primary" href="http://127.0.0.1:8000/car/add" role="button">Add Vehicle</a><br><br>
+<a class="btn btn-primary" href="http://127.0.0.1:8000/car/sdis" role="button" style="margin-left:25px;">View</a>
+
+</div>
+<div style="padding-top: 220px;">
+<div class="container-fluid" style="color: rgb(255, 255, 255); background-color: black; padding-top: 30px; padding-bottom: 30px;">
+        <div class="row">
+          <div class="col" style="margin-left: 10px;">
+
+          <h3>Follow Us</h3><br>
+
+        <form class="d-flex" style="margin-right: 15%; margin-top: -20px;">
+
+          <i class="fa-brands fa-youtube" style="color: #ffffff; padding:10px;"></i>
+          <i class="fa-brands fa-instagram" style="color: #ffffff; padding:10px;"></i>
+          <i class="fa-brands fa-facebook" style="color: #ffffff; padding:10px;"></i>
+          <!-- <button class="btn btn-outline-warning" type="submit">Download</button> -->
+        </form>
+      </div>
+      <div class="col">
+        <h5><b>Our Services</b></h5>
+        <p>Insurance</p>
+        <p>Service</p>
+        <p>Warranty Upgrade</p>
+      </div>
+      <div class="col">
+        <h5><b>Support</b></h5>
+        <p>FAQ</p>
+        <p>Download Your Invoice</p>
+        </div>
+      <div class="col">
+        <h5><b>About</b></h5>
+        <p>About Us</p>
+        <p>Stories</p>
+        <p>Careers</p>
+      </div>
+
+      <div class="row">
+        <center><p style="margin: 30px;">Copyright © 2023, COD. All Rights Reserved.</p></center>
+
+      </div>
+      </div>
+</div>
+</div>
+</body>
+</html>
